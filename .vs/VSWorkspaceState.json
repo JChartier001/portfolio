@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets\\sass\\components",
-    "\\assets\\sass\\layout",
-    "\\images"
+    "\\assets\\css\\images",
+    "\\assets\\sass",
+    "\\images\\fulls"
   ],
-  "SelectedNode": "\\images\\responsive.JPG",
+  "SelectedNode": "\\images",
   "PreviewInSolutionExplorer": false
 }
