@@ -12,9 +12,7 @@ body{
     }
 
 .card{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: relative;
     width: 400px;
     height: 500px;
     background: #fff;
@@ -30,7 +28,7 @@ body{
 }
 .card:before {
     content: "";
-    position: absolute;
+    position: relative;
     top: -5px;
     left: 0;
     width: 100%;
@@ -41,7 +39,7 @@ body{
 }
 .card:after {
     content: "";
-    position: absolute;
+    position: relative;
     top: 0;
     right: -5px;
     width: 5px;
@@ -76,7 +74,7 @@ body{
 .card .details {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     box-sizing: border-box;
@@ -92,17 +90,14 @@ header{
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;        
-    /* margin: 0 40%; */
-    /* margin-top: 5%;        */
-    
+    align-items: center;  
 }
 
 h1{
     font-size: 3.5rem;
     text-shadow: 0 0 10px #c078dd80, 0 0 20px #c078dd80, 0 0 80px #c078dd80, 0 0 120px #c078dd80;
     animation: animate .1s linear infinite;  
-    padding: 0;  
+    /* padding: 0;   */
 }
 
 h1 span {
@@ -171,16 +166,27 @@ a{
 a:last-child{
     border-bottom-style: outset;
 }
-@media screen and (max-width: 500px){
+@media all and (max-width: 500px){
 
     header{
-        margin: 0;
-        padding: 0;        
+       align-items: flex-start;
+       padding: 10%;
+    }
+
+    h2{
+        font-size: 1.8rem;
     }
 
     .card{
-        width: 100%;
+        position: relative;
+        width: 200px;
+        height: 300px;
+        transform: translate(50%, -0%) ;
+    }
+    
+    .imgBox{
         height: 70%;
-        transform: translate(-50%, -20%) ;
     }
 }
+
+@media all and (max-width: 800px){
