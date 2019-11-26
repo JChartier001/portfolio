@@ -13,13 +13,13 @@ body{
 
 .card{
     position: absolute;
-    top: 40%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
     width: 400px;
     height: 500px;
     background: #fff;
     transform-style: preserve-3d;
-    /* transform: translate(-50%, -40%) perspective(1440); */
+    transform: translate(-50%, -40%) perspective(1440);
     box-shadow: inset 300px 0 50px rgba(0,0,0,0.5), 0 20px 100px rgba(0,0,0,0.5);
     transition: 1s;
 }
