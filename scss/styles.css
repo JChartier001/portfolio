@@ -71,7 +71,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5%;
 }
 
 header h1 {
@@ -177,15 +176,70 @@ header h2 {
   }
 }
 
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact p {
+  padding: 10px;
+}
+
+.contact .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .social i {
+  margin: 5px;
+}
+
+.contact .email {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
 .card {
   position: fixed;
-  top: 20%;
-  left: 50%;
   width: 400px;
   height: 500px;
   background: #fff;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  margin-left: 10%;
   -webkit-box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5), 0 20px 100px rgba(0, 0, 0, 0.5);
           box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5), 0 20px 100px rgba(0, 0, 0, 0.5);
   -webkit-transition: 1s;
@@ -434,27 +488,4 @@ header h2 {
   background: linear-gradient(#18171780, #18171780), url("../images/ProfilePic.jpg");
   background-size: cover;
 }
-
-@media all and (max-height: 1000px) {
-  .card {
-    -webkit-transform: translate(-50%, 20%);
-            transform: translate(-50%, 20%);
-  }
-}
-
-@media all and (max-height: 900px) {
-  .card {
-    -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
-  }
-}
-
-@media all and (max-height: 600px) {
-  .card {
-    -webkit-transform: translate(-50%, 20%);
-            transform: translate(-50%, 20%);
-  }
-}
-
-/* The Modal (background) */
 /*# sourceMappingURL=styles.css.map */

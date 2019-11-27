@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:100&display=swap');
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    
+}
 .card{
-    position: fixed;;
-    top: 20%;
-    left: 50%;
+
+    position: fixed;
+    // top: 20%;
+    // left: 50%;
     width: 400px;
     height: 500px;
     background: #fff;
     transform-style: preserve-3d;
+    margin-left: 10%;
+    
     // transform: translate(-50%, -50%) perspective(2000px);
     box-shadow: inset 300px 0 50px rgba(0,0,0,0.5), 0 20px 100px rgba(0,0,0,0.5);
     transition: 1s;
@@ -230,23 +240,22 @@
         background-size: cover;     
     }
 
-    @media all and (max-height: 1000px){
-        transform: translate(-50%, 20%);
-    }
+    // @media all and (max-height: 1000px){
+    //     transform: translate(-50%, 20%);
+    // }
     
-    @media all and (max-height: 900px){
-        transform: translate(-50%, 0%);
-    }
+    // @media all and (max-height: 900px){
+    //     transform: translate(-50%, 0%);
+    // }
     
-    @media all and (max-height: 600px){
-        transform: translate(-50%, 20%);
+    // @media all and (max-height: 600px){
+    //     transform: translate(-50%, 20%);
       
-    }
+    // }
 }
 
 
 
-/* The Modal (background) */
 
   
   

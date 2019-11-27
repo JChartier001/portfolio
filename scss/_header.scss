@@ -4,7 +4,10 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;  
-    margin-top: 5%;
+    // margin-top: 5%;
+    // height: 300px;
+    // width: 100%;
+    // margin: 5% auto;
 
 
     h1{
@@ -73,4 +76,29 @@ header{
     }
 
 
+}
+.contact{
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    justify-content: center;
+    position: absolute;
+    right: 10%;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+
+    p{
+        padding: 10px;
+    }
+    .social{
+        display: flex;
+        i{
+            margin: 5px;
+        }
+    }
+    .email{
+        text-decoration: none;
+        color: white;
+    }
 }
