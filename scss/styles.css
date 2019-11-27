@@ -1,0 +1,460 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Arima+Madurai:100&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Arima+Madurai:100&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/beach.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Arima Madurai', cursive;
+}
+
+header {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  text-shadow: 0 0 10px #c078dd80, 0 0 20px #c078dd80, 0 0 80px #c078dd80, 0 0 120px #c078dd80;
+  -webkit-animation: animate .1s linear infinite;
+          animation: animate .1s linear infinite;
+  margin-bottom: 2%;
+}
+
+header h1 span {
+  -webkit-animation: animate .5s linear infinite;
+          animation: animate .5s linear infinite;
+}
+
+header h1 span:nth-child(1) {
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+}
+
+header h1 span:nth-child(2) {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+header h1 span:nth-child(3) {
+  -webkit-animation-delay: .35s;
+          animation-delay: .35s;
+}
+
+header h1 span:nth-child(4) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+header h1 span:nth-child(5) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+header h1 span:nth-child(6) {
+  -webkit-animation-delay: .1;
+          animation-delay: .1;
+}
+
+header h1 span:nth-child(7) {
+  -webkit-animation-delay: .15s;
+          animation-delay: .15s;
+}
+
+header h1 span:nth-child(8) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+header h1 span:nth-child(9) {
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+}
+
+header h1 span :nth-child(10) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+header h2 {
+  font-size: 2.5rem;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  width: 400px;
+  height: 500px;
+  background: #fff;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5), 0 20px 100px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5), 0 20px 100px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card:hover {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5), 0 10px 100px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5), 0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .imgBox {
+  -webkit-transform: rotateY(-135deg);
+          transform: rotateY(-135deg);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #504553;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 5px;
+  height: 100%;
+  background: #8e7b94;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: skewY(135deg);
+          transform: skewY(135deg);
+}
+
+.card .imgBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: 1s cubic-bezier(0.15, 1.7, 0.84, 0.58);
+  transition: 1s cubic-bezier(0.15, 1.7, 0.84, 0.58);
+}
+
+.card .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: -1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 400px;
+  height: 500px;
+}
+
+.card .details p {
+  color: black;
+  font-weight: bold;
+}
+
+.card .details .title {
+  font-size: 2.5rem;
+  padding-bottom: 5%;
+}
+
+.card .details .myBtnWork, .card .details .myBtn, .card .details .myBtnContact {
+  border-bottom: 1px solid gray;
+  font-size: 1.4rem;
+  padding: 5%;
+  color: black;
+}
+
+.card .details .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 96%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.card .details .modal .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.card .details .modal .modal-content .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.card .details .modal .modal-content .close:hover, .card .details .modal .modal-content .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card .details .modalWork {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 96%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.card .details .modalWork .modal-contentWork {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.card .details .modalWork .modal-contentWork img {
+  width: 100%;
+}
+
+.card .details .modalWork .modal-contentWork .closeWork {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.card .details .modalWork .modal-contentWork .closeWork:hover, .card .details .modalWork .modal-contentWork .closeWork:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card .details .modalContact {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 96%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.card .details .modalContact .modal-contentContact {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.card .details .modalContact .modal-contentContact .closeContact {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.card .details .modalContact .modal-contentContact .closeContact:hover, .card .details .modalContact .modal-contentContact .closeContact:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card .details form {
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .details form input {
+  margin: 1%;
+  width: 90%;
+}
+
+.card .details form .message {
+  height: 200px;
+}
+
+.card .details form .button {
+  border: 1px solid black;
+  font-weight: bold;
+  padding: 1%;
+  margin: 1%;
+  margin-top: 2%;
+  width: 50%;
+  text-align: center;
+}
+
+.card .imgBox {
+  background: -webkit-gradient(linear, left top, left bottom, from(#18171780), to(#18171780)), url("../images/ProfilePic.jpg");
+  background: linear-gradient(#18171780, #18171780), url("../images/ProfilePic.jpg");
+  background-size: cover;
+}
+
+@media all and (max-height: 1000px) {
+  .card {
+    -webkit-transform: translate(-50%, 20%);
+            transform: translate(-50%, 20%);
+  }
+}
+
+@media all and (max-height: 900px) {
+  .card {
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+}
+
+@media all and (max-height: 600px) {
+  .card {
+    -webkit-transform: translate(-50%, 20%);
+            transform: translate(-50%, 20%);
+  }
+}
+
+/* The Modal (background) */
+/*# sourceMappingURL=styles.css.map */

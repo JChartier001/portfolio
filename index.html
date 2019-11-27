@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>Jen Chartier</title>
-        <link rel="stylesheet" href="css\index.css">
+        <link rel="stylesheet" href="scss\styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="index.js" async></script>
     </head>
     <body>
 		<header>
@@ -14,9 +15,39 @@
             <div class="imgBox">                
             </div>
             <div class="details">
-                <a href="">About Me</a>
-                <a href="">See My Work</a>
-                <a href="">Work With Me</a>
+                <span class="myBtn">About Me</span>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2 class="title">About Me</h2>
+                            <p>All of my working career, I had worked in Healthcare.  I love to help people.  In that time, I was always interested in the newest and greatest technology.  I started to learn how to code, and I fell in love with it.  I decided to put the two together. <br/>Now I can work with technology and also help others achieve their dreams.  <br />Currently, I am a Full Stack Web Developer student at Lambda School.</p>
+                        </div>
+                    </div>
+                <span class="myBtnWork">See My Work</span>
+                    <div class="modalWork">
+                        <div class="modal-contentWork">
+                            <span class="closeWork">&times;</span>
+                            <h2 class="title">My Work</h2>
+                            <a href="https://jchartier001.github.io/responsive-web-design-I/"><img src="images\responsive.JPG" alt="Responsive website project image"/></a>
+                            <h4>Responsive Website Design/Flexbox</h4>
+                            <p>Project originally started with refactoring code to include flexbox.  Then added responsiveness for mobile and tablet. Click image to view project/code.</p>
+                            
+                        </div>
+                    </div>
+                <span class="myBtnContact">Work With Me</span>
+                <div class="modalContact">
+                    <div class="modal-contentContact">
+                        <span class="closeContact">&times;</span>
+                        <h6>If you would like to work with me, contact me below.</h6>
+                        <form>
+                            <input class="name" type="text" name="name" placeholder="Name"/>
+                            <input class="email" type="email" name="email" placeholder="Email"/>
+                            <input class="message" type="textarea" name="message" placeholder="Message"/>
+                            <span class='button'>Send Message</span>
+                        </form>
+                       
+                    </div>
+                </div>
             </div>
         </div>
     </body>
