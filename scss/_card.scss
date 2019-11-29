@@ -3,23 +3,17 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
-    
+    align-items: center;
 }
-.card{
 
-    position: fixed;
-    // top: 20%;
-    // left: 50%;
+.card{
     width: 400px;
     height: 500px;
     background: #fff;
     transform-style: preserve-3d;
-    margin-left: 10%;
-    
-    // transform: translate(-50%, -50%) perspective(2000px);
     box-shadow: inset 300px 0 50px rgba(0,0,0,0.5), 0 20px 100px rgba(0,0,0,0.5);
     transition: 1s;
+    margin: 2% 0;
 
     &:hover {
         transform: rotate(-10deg);
@@ -126,6 +120,7 @@ body{
                   }  
               }
           }
+
           .modalWork {
             display: none; 
             position: fixed; 
@@ -135,9 +130,8 @@ body{
             top: 0;
             width: 100%; 
             height: 96%;
-            overflow: auto; /* Enable scroll if needed */
+            overflow: auto;
             background-color: rgba(0,0,0,0.4); 
-        
             
             .modal-contentWork {
                 background-color: #fefefe;
@@ -145,12 +139,24 @@ body{
                 padding: 20px;
                 border: 1px solid #888;
                 width: 80%;
-                line-height: 2rem;
-                font-size: 1.2rem;
+                line-height: 1.3rem;
+                font-size: 1.0rem;
+
                 img{
                     width: 100%;
                 }
-        
+
+                h4{
+                    font-weight: bolder;
+                    font-size: 1.4rem;
+                    margin:3% 0;
+                }
+
+                p{
+                    color:rgb(33, 34, 34);
+                    margin-bottom:3%;
+                }
+                        
                 .closeWork {
                     color: #aaaaaa;
                     float: right;
@@ -201,8 +207,8 @@ body{
                     }
                   }  
               }
-
           }
+
           form{
             height: 350px;
             display: flex;
@@ -211,10 +217,11 @@ body{
                 margin:1%;
                 width: 90%;
                 }
+
             .message{
-                height: 200px;
-               
+                height: 200px;               
             }
+
             .button{
                 border: 1px solid black;
                 font-weight: bold;
@@ -223,13 +230,10 @@ body{
                 margin-top: 2%;
                 width: 50%;
                 text-align: center;
-
-            }
-            
+            }            
           }
-          
-        
-    }
+        }
+
     .imgBox{
         background: 
         linear-gradient(
@@ -239,19 +243,8 @@ body{
         url("../images/ProfilePic.jpg");
         background-size: cover;     
     }
+    
 
-    // @media all and (max-height: 1000px){
-    //     transform: translate(-50%, 20%);
-    // }
-    
-    // @media all and (max-height: 900px){
-    //     transform: translate(-50%, 0%);
-    // }
-    
-    // @media all and (max-height: 600px){
-    //     transform: translate(-50%, 20%);
-      
-    // }
 }
 
 

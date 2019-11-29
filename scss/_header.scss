@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:100&display=swap');
+
 header{
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;  
-    // margin-top: 5%;
-    // height: 300px;
-    // width: 100%;
-    // margin: 5% auto;
-
-
+    
     h1{
         font-size: 3.5rem;
         text-shadow: 0 0 10px #c078dd80, 0 0 20px #c078dd80, 0 0 80px #c078dd80, 0 0 120px #c078dd80;
@@ -49,7 +45,6 @@ header{
                 animation-delay: .2s;
             }
         }
-
     }
 
     h2 {
@@ -74,23 +69,18 @@ header{
             }
         }   
     }
-
-
 }
+
 .contact{
     display: flex;
-    height: 100%;
-    width: fit-content;
-    justify-content: center;
-    position: absolute;
-    right: 10%;
     align-items: center;
     color: white;
     flex-direction: column;
 
     p{
-        padding: 10px;
-    }
+        padding: 5px;
+        }
+
     .social{
         display: flex;
         i{
@@ -98,7 +88,9 @@ header{
         }
     }
     .email{
+
         text-decoration: none;
         color: white;
+        margin-bottom: 2%;
     }
 }
