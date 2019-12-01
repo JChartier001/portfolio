@@ -428,8 +428,6 @@ body {
   top: 0;
   width: 100%;
   height: 96%;
-  overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -456,7 +454,7 @@ body {
   cursor: pointer;
 }
 
-.card .details form {
+.card .details .modalContact form {
   height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,18 +465,18 @@ body {
           flex-direction: column;
 }
 
-.card .details form input {
+.card .details .modalContact form input {
   margin: 1%;
   width: 90%;
 }
 
-.card .details form .message {
+.card .details .modalContact form .message {
   height: 200px;
 }
 
-.card .details form .button {
-  border: 1px solid black;
-  font-weight: bold;
+.card .details .modalContact form .sendButton {
+  border: 1px solid #854c7b;
+  background: #f5c2ec;
   padding: 1%;
   margin: 1%;
   margin-top: 2%;
