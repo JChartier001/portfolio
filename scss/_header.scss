@@ -75,22 +75,25 @@ header{
     display: flex;
     align-items: center;
     color: white;
-    flex-direction: column;
-
+    flex-direction: column;   
     p{
         padding: 5px;
         }
-
     .social{
         display: flex;
+        flex-direction: column;
+        margin: 2%;
         i{
             margin: 5px;
         }
     }
     .email{
-
         text-decoration: none;
         color: white;
         margin-bottom: 2%;
+    }
+    .socialSpan{
+        color:white;
+        // margin: 1%;
     }
 }
