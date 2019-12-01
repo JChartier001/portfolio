@@ -4,6 +4,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .card{
@@ -14,7 +15,11 @@ body{
     box-shadow: inset 300px 0 50px rgba(0,0,0,0.5), 0 20px 100px rgba(0,0,0,0.5);
     transition: 1s;
     margin-top: 2%;
-    margin-left: -10%;
+    margin-left: -8%;
+
+    @media (max-width: 1150px){
+        margin-left: 0;
+    }
 
     &:hover {
         transform: rotate(-10deg);
