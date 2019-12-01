@@ -200,21 +200,6 @@ header h2 {
   padding: 5px;
 }
 
-.contact .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 2%;
-}
-
-.contact .social i {
-  margin: 5px;
-}
-
 .contact .email {
   text-decoration: none;
   color: white;
