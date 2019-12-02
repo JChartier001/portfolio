@@ -10,15 +10,19 @@ body{
         display: flex;
         justify-content: space-around;
         width: 100%;
+
         .skills {
             width: 25%;
             display: flex;
             margin-top: 5%;
+
             .techSkills{
                 margin-right: 20%;
+
                 h3{
                     margin-bottom: 20%;
                 }
+
                 li{
                     color: white;
                     font-size: 1.5rem;
@@ -26,9 +30,11 @@ body{
                     padding-bottom: 2%;
                     }
             }
+
             h3{
                 margin-bottom: 10%;
             }
+
             li{
             color: white;
             font-size: 1.5rem;
@@ -39,14 +45,17 @@ body{
         .aboutMe{
             width: 25%;
             margin-top: 5%;
+
             h3{
                 margin-bottom: 10%;
             }
+
             p{
                 color:white;
                 font-size: 1.5rem;
                 line-height: 1.8rem;
             }
+
             a{
                 color: white;
                 font-size: 1.2rem;
@@ -62,20 +71,24 @@ body{
         padding: 3%;
         width: 70%;
         background: rgba(195, 154, 201, 0.548);
+
         h3{
             margin-top: 0;
             margin-bottom: 2%;
             color: black;
             text-align:center;
         }
+
         h5{
             text-align: center;
             padding-top: 5%;
         }
+
         .myWork{
             color: white;
             display: flex;
             flex-wrap: wrap;
+
             .project{
                 border: 1px solid black;
                 background: white;
@@ -92,12 +105,14 @@ body{
                     border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
                 }
+
                 h4, p {
                     padding: 5%;
                 }
             }
+        }
     }
-    }
+    
     h3{
         color: white;
         font-size: 2rem;        
