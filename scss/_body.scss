@@ -11,9 +11,21 @@ body{
         justify-content: space-around;
         width: 100%;
         .skills {
-            width: 15%;
-            margin-top: 2%;
-            margin-left: 10%;
+            width: 25%;
+            display: flex;
+            margin-top: 5%;
+            .techSkills{
+                margin-right: 20%;
+                h3{
+                    margin-bottom: 20%;
+                }
+                li{
+                    color: white;
+                    font-size: 1.5rem;
+                    list-style: circle;
+                    padding-bottom: 2%;
+                    }
+            }
             h3{
                 margin-bottom: 10%;
             }
@@ -26,7 +38,7 @@ body{
         }
         .aboutMe{
             width: 25%;
-            margin-top: 1%;
+            margin-top: 5%;
             h3{
                 margin-bottom: 10%;
             }
@@ -49,7 +61,7 @@ body{
         margin-top: 10%;
         padding: 3%;
         width: 70%;
-        background: rgba(253, 245, 230, 0.5);
+        background: rgba(195, 154, 201, 0.548);
         h3{
             margin-top: 0;
             margin-bottom: 2%;
@@ -88,9 +100,7 @@ body{
     }
     h3{
         color: white;
-        font-size: 2rem;
-        
-        margin-top: 10%;
+        font-size: 2rem;        
     }
 }
 
