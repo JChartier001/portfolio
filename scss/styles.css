@@ -175,7 +175,7 @@ header h2 {
 }
 
 body {
-  font-family: 'Palanquin', sans-serif !important;
+  font-family: 'Palanquin', sans-serif;
 }
 
 body header {
@@ -379,6 +379,10 @@ hr {
 .row .medium-6-columns {
   width: 50%;
   padding: 2%;
+}
+
+p {
+  width: 75%;
 }
 
 .skills {
