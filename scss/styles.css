@@ -175,7 +175,7 @@ header h2 {
 }
 
 body {
-  font-family: 'Palanquin', sans-serif;
+  font-family: 'Palanquin', sans-serif !important;
 }
 
 body header {
@@ -193,6 +193,7 @@ body header {
   margin-top: 0;
   background: #3f3e3e;
   height: 800px;
+  font-family: 'Palanquin', sans-serif !important;
 }
 
 body header nav {
@@ -210,7 +211,7 @@ body header nav a {
   color: white;
 }
 
-body .cardInfo {
+body header .cardInfo {
   width: 400px;
   height: 500px;
   background: #fff;
@@ -223,19 +224,19 @@ body .cardInfo {
   margin-top: 2%;
 }
 
-body .cardInfo:hover {
+body header .cardInfo:hover {
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
   -webkit-box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5), 0 10px 100px rgba(0, 0, 0, 0.5);
           box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5), 0 10px 100px rgba(0, 0, 0, 0.5);
 }
 
-body .cardInfo:hover .imgBox {
+body header .cardInfo:hover .imgBox {
   -webkit-transform: rotateY(-135deg);
           transform: rotateY(-135deg);
 }
 
-body .cardInfo::before {
+body header .cardInfo::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -249,7 +250,7 @@ body .cardInfo::before {
           transform: skewX(-45deg);
 }
 
-body .cardInfo::after {
+body header .cardInfo::after {
   content: "";
   position: absolute;
   top: 0;
@@ -263,7 +264,7 @@ body .cardInfo::after {
           transform: skewY(135deg);
 }
 
-body .cardInfo .imgBox {
+body header .cardInfo .imgBox {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -276,7 +277,7 @@ body .cardInfo .imgBox {
   background-size: cover;
 }
 
-body .cardInfo .details {
+body header .cardInfo .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,47 +290,47 @@ body .cardInfo .details {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 400px;
   height: 500px;
-  text-align: center;
 }
 
-body .cardInfo .details p {
+body header .cardInfo .details p {
   color: black;
   font-weight: bold;
   padding-bottom: 2%;
 }
 
-body .cardInfo .details h4 {
+body header .cardInfo .details h4 {
   font-size: 2.5rem;
   margin-bottom: 5%;
 }
 
-body .cardInfo .details .email {
+body header .cardInfo .details .email {
   margin-bottom: 5%;
 }
 
-body .cardInfo .details .email a {
+body header .cardInfo .details .email a {
   color: black;
   font-weight: bold;
   text-decoration: none;
 }
 
-body .cardInfo .details .social {
+body header .cardInfo .details .social {
   padding-top: 5%;
 }
 
-h1 {
+body h1 {
   text-align: center;
 }
 
-.title {
+body .title {
   text-align: center;
-  margin-bottom: 2%;
-  text-decoration: underline;
 }
 
-.work {
+body .work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,28 +343,28 @@ h1 {
           justify-content: center;
 }
 
-.work .cell {
+body .work .cell {
   width: 350px;
   margin: 2%;
   -webkit-box-shadow: 2px 2px 4px 4px #999595;
           box-shadow: 2px 2px 4px 4px #999595;
 }
 
-.work .cell .card {
+body .work .cell .card {
   height: 400px;
   margin: 0;
 }
 
-.work .cell img {
+body .work .cell img {
   width: 100%;
   height: 200px;
 }
 
-hr {
+body hr {
   max-width: 75%;
 }
 
-.row {
+body .row {
   width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,16 +377,16 @@ hr {
           justify-content: space-between;
 }
 
-.row .medium-6-columns {
+body .row .medium-6-columns {
   width: 50%;
   padding: 2%;
 }
 
-p {
+body #contact p {
   width: 75%;
 }
 
-.skills {
+body .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +398,7 @@ p {
       justify-content: space-around;
 }
 
-.skills svg {
+body .skills svg {
   margin: 1%;
   max-width: 150px;
 }
