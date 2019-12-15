@@ -4,13 +4,14 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    margin: 50px 0; 
+    margin-top: 5%;
+    // margin: 50px 0; 
     
     h1{
         font-size: 3.5rem;
         text-shadow: 0 0 10px #c078dd80, 0 0 20px #c078dd80, 0 0 80px #c078dd80, 0 0 120px #c078dd80;
         animation: animate .1s linear infinite;  
-        margin-bottom: 2%;
+        // margin-bottom: 2%;
 
         span {
             animation: animate .5s linear infinite;

@@ -47,11 +47,11 @@
         z-index: 1;
         transform-origin: left;
         transition: 1s cubic-bezier(.15,1.7,.84,.58);
-        background: 
-        linear-gradient(
-          #18171780, 
-          #18171780
-        ),
+        // background: 
+        // linear-gradient(
+        //   #18171780, 
+        //   #18171780
+        // ),
         url("../images/ProfilePic.jpg");
         background-size: cover;  
     }
