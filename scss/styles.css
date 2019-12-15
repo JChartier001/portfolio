@@ -355,6 +355,15 @@ body .work .cell .card {
   margin: 0;
 }
 
+body .work .cell .card span {
+  font-weight: bold;
+}
+
+body .work .cell .card:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 body .work .cell img {
   width: 100%;
   height: 200px;
