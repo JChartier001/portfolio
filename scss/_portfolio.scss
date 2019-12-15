@@ -119,11 +119,13 @@ h1{
 }
 .title{
     text-align: center;
+    margin-bottom: 2%;
+    text-decoration: underline;
 }
 .work{
     display: flex;
     flex-flow:row wrap;
-    max-width: 75%;
+    
     justify-content: center;
 
     .cell{
