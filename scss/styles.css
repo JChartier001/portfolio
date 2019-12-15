@@ -403,12 +403,18 @@ body .skills {
       flex-wrap: wrap;
   max-width: 75%;
   margin: auto;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding-left: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .skills svg {
   margin: 1%;
   max-width: 150px;
+}
+
+body .skills svg:hover {
+  border: 1px solid white;
 }
 /*# sourceMappingURL=styles.css.map */
