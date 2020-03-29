@@ -274,7 +274,6 @@ header .title img {
 .row {
   background: #191919;
   color: #b95ee8;
-  width: 100%;
   display: flex;
   padding: 2%;
   margin: auto;
@@ -297,4 +296,7 @@ header .title img {
 .row label {
   color: #b95ee8;
   font-size: 1rem;
+}
+.row .columns {
+  width: 75%;
 }
