@@ -1,0 +1,300 @@
+.dark {
+  background: #191919;
+  color: #b95ee8;
+}
+.light {
+  background: #b95ee8;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Montserrat', sans-serif;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+html,
+body {
+  font-family: 'Martel', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Martel', serif;
+}
+h1 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
+p {
+  line-height: 1.5;
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+header {
+  background: #191919;
+  color: #b95ee8;
+  font-family: 'Martel', serif;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  margin: 10% 0 3% 0;
+}
+header nav {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  padding-top: 2%;
+}
+header nav a {
+  color: #b95ee8;
+}
+header .title {
+  display: flex;
+  justify-content: center;
+}
+header .title h3 {
+  margin-top: 5%;
+}
+header .title img {
+  margin: 0 2%;
+  padding: 0 3%;
+}
+.aboutMe {
+  background: #b95ee8;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+.aboutMe h2 {
+  margin: 5% 0;
+}
+.aboutMe .description {
+  width: 80%;
+}
+.aboutMe .description p {
+  font-size: 1.1rem;
+}
+.myWork {
+  background: #191919;
+  color: #b95ee8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 750px;
+  padding: 2%;
+}
+.myWork .title {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.myWork .title h3 {
+  margin: 5% 0;
+}
+.myWork .cards {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+}
+.myWork .cards .card {
+  box-shadow: 5px 5px 10px 10px #b95ee8;
+  margin: 2%;
+}
+.myWork .cards .card img {
+  height: 200px;
+  border-bottom: 1px solid gray;
+}
+.myWork .cards .card .card-body {
+  border-top: 1px solid lightgray;
+}
+.skills {
+  background: #b95ee8;
+  height: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4%;
+}
+.skills h2 {
+  height: 50px;
+}
+.skills svg {
+  margin: 1%;
+  max-width: 200px;
+}
+.row {
+  background: #191919;
+  color: #b95ee8;
+  width: 100%;
+  display: flex;
+  padding: 2%;
+  margin: auto;
+  justify-content: center;
+}
+.row .medium-6-columns {
+  width: 50%;
+  padding: 2%;
+}
+.row h3 {
+  text-align: center;
+}
+.row ::placeholder {
+  color: gray;
+}
+.row textarea {
+  margin-bottom: 3%;
+  height: 100px;
+}
+.row label {
+  color: #b95ee8;
+  font-size: 1rem;
+}
