@@ -3,7 +3,11 @@
   color: #b95ee8;
 }
 .light {
-  background: #b95ee8;
+  background: #ba5ee8;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -133,57 +137,150 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 100%;
-}
 html,
-body {
-  font-family: 'Martel', serif;
-}
+body,
+div,
+span,
+applet,
+object,
+iframe,
 h1,
 h2,
 h3,
 h4,
-h5 {
-  font-family: 'Martel', serif;
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-h1 {
-  font-size: 3rem;
-  padding-bottom: 10px;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-h2 {
-  font-size: 2.5rem;
+body {
+  line-height: 1;
 }
-h3 {
-  font-size: 2rem;
+ol,
+ul {
+  list-style: none;
 }
-h4 {
-  font-size: 2.5rem;
+blockquote,
+q {
+  quotes: none;
 }
-p {
-  line-height: 1.5;
-  font-size: 1rem;
-  padding-bottom: 10px;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
-img {
-  max-width: 100%;
-  height: auto;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 header {
-  background: #191919;
-  color: #b95ee8;
-  font-family: 'Martel', serif;
-  height: fit-content;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Martel", serif;
+  border: 1px solid white;
   padding-bottom: 3%;
   display: flex;
   flex-direction: column;
+  height: 70vh;
   align-items: center;
 }
+header #myVideo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
 header h1 {
-  margin: 10% 0 3% 0;
+  margin: 8% 0 3% 0;
   text-align: center;
 }
 header nav {
@@ -202,110 +299,144 @@ header .title {
   display: flex;
   justify-content: center;
 }
-header .title h3 {
-  margin-top: 5%;
-}
 header .title img {
   margin: 0 2%;
-  padding: 0 3%;
 }
 .aboutMe {
-  background: #b95ee8;
-  height: fit-content;
+  background: #ba5ee8;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2%;
+}
+.aboutMe .aboutme-content {
+  display: flex;
 }
 .aboutMe h2 {
   margin: 5% 0;
 }
 .aboutMe .description {
   width: 80%;
+  padding: 2% 10%;
 }
 .aboutMe .description p {
   font-size: 1.1rem;
 }
+.aboutMe img {
+  max-height: 400px;
+  margin: 0 0 50px 50px;
+}
 .myWork {
   background: #191919;
   color: #b95ee8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: fit-content;
-  padding: 2%;
 }
 .myWork .title {
+  text-align: center;
+  padding-top: 2%;
+}
+.myWork .work_container {
+  width: 100vw;
   display: flex;
-  justify-content: center;
-  width: 50%;
-}
-.myWork .title h3 {
-  margin: 5% 0;
-}
-.myWork .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  color: black;
-  width: 100%;
-}
-.myWork .cards .card {
-  box-shadow: 5px 5px 10px 10px #b95ee8;
-  margin: 2%;
-  max-width: 400px;
-}
-.myWork .cards .card img {
-  height: 300px;
-  border-bottom: 1px solid gray;
-}
-.myWork .cards .card .card-body {
-  border-top: 1px solid lightgray;
-}
-.skills {
-  background: #b95ee8;
-  height: fit-content;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 4% 0 4% 10%;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.myWork .work_container .card {
+  position: relative;
+  max-width: 400px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 20px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.myWork .work_container .card:hover {
+  height: fit-content;
+}
+.myWork .work_container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 20px;
+  transition-delay: 0.3s;
+}
+.myWork .work_container .card .imgBx {
+  position: relative;
+  width: 90%;
+  height: fit-content;
+  left: 20px;
+}
+.myWork .work_container .card .imgBx img {
+  border-radius: 4px;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.myWork .work_container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15 px;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.skills {
+  background: #ba5ee8;
+  height: fit-content;
+  text-align: center;
 }
 .skills h2 {
-  height: 50px;
+  padding-top: 3%;
 }
-.skills svg {
-  margin: 1%;
-  max-width: 200px;
+.skills .skill-list {
+  display: flex;
+  padding: 4% 10%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.row {
+.skills img {
+  margin: 2%;
+  max-width: 100px;
+}
+.contact {
+  padding: 0 10%;
   background: #191919;
   color: #b95ee8;
-  display: flex;
-  height: fit-content;
-  padding: 2%;
-  margin: auto;
-  justify-content: center;
 }
-.row .medium-6-columns {
-  width: 50%;
-  padding: 2%;
-}
-.row h3 {
+.contact h2 {
   text-align: center;
-  padding: 5%;
+  padding: 3%;
 }
-.row ::placeholder {
+.contact .row {
+  display: flex;
+}
+.contact .row ::placeholder {
   color: gray;
 }
-.row textarea {
+.contact .row textarea {
   margin-bottom: 3%;
   height: 100px;
 }
-.row label {
+.contact .row label {
   color: #b95ee8;
   font-size: 1rem;
 }
-.row .columns {
-  width: 75%;
+.contact .row .columns {
+  width: 40%;
+  margin: 2% 5%;
+}
+.contact .row .contact_info {
+  display: flex;
+  flex-direction: column;
+}
+.contact .row .contact_info p,
+.contact .row .contact_info li {
+  font-size: 1.2rem;
+}
+.contact .row form {
+  width: 50%;
 }
