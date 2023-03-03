@@ -1,0 +1,444 @@
+.dark {
+  background: #191919;
+  color: #b95ee8;
+}
+.light {
+  background: #ba5ee8;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Montserrat', sans-serif;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+header {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Martel", serif;
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header #myVideo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+header h1 {
+  margin: 3% 0 3% 0;
+  text-align: center;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  padding-top: 2%;
+}
+header nav a {
+  color: #b95ee8;
+  padding: 2%;
+}
+header .title {
+  display: flex;
+  justify-content: center;
+}
+header .title img {
+  margin: 0 2%;
+}
+.aboutMe {
+  background: #ba5ee8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+.aboutMe .aboutme-content {
+  display: flex;
+}
+.aboutMe h2 {
+  margin: 5% 0;
+}
+.aboutMe .description {
+  width: 80%;
+  padding: 2% 10%;
+}
+.aboutMe .description p {
+  font-size: 1.1rem;
+}
+.aboutMe .profile_img {
+  max-height: 400px;
+  margin: 0 0 50px 50px;
+}
+.myWork {
+  background: #191919;
+  color: #b95ee8;
+}
+.myWork .title {
+  text-align: center;
+  padding-top: 2%;
+}
+.myWork .work_container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.myWork .work_container .card {
+  position: relative;
+  max-width: 400px;
+  height: 300px;
+  background: #fff;
+  margin: 30px 20px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.myWork .work_container .card:hover {
+  height: fit-content;
+}
+.myWork .work_container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 20px;
+  transition-delay: 0.3s;
+}
+.myWork .work_container .card .imgBx {
+  position: relative;
+  width: 90%;
+  height: fit-content;
+  left: 20px;
+}
+.myWork .work_container .card .imgBx img {
+  border-radius: 4px;
+  width: 100%;
+  height: 250px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.myWork .work_container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15 px;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.skills {
+  background: #ba5ee8;
+  height: fit-content;
+  text-align: center;
+}
+.skills h2 {
+  padding-top: 3%;
+}
+.skills .skill-list {
+  display: flex;
+  padding: 4% 10%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.skills img {
+  margin: 2%;
+  max-width: 100px;
+}
+.contact {
+  padding: 0 10%;
+  background: #191919;
+  color: #b95ee8;
+}
+.contact h2 {
+  text-align: center;
+  padding: 3%;
+}
+.contact .row {
+  display: flex;
+}
+.contact .row ::placeholder {
+  color: gray;
+}
+.contact .row textarea {
+  margin-bottom: 3%;
+  height: 100px;
+}
+.contact .row label {
+  color: #b95ee8;
+  font-size: 1rem;
+}
+.contact .row .columns {
+  width: 40%;
+  margin: 2% 5%;
+}
+.contact .row .contact_info {
+  display: flex;
+  flex-direction: column;
+}
+.contact .row .contact_info p,
+.contact .row .contact_info li {
+  font-size: 1.2rem;
+}
+.contact .row form {
+  width: 50%;
+}
+.contact .attribution {
+  opacity: 0.1;
+}

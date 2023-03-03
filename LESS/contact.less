@@ -1,0 +1,41 @@
+.contact {
+  h2 {
+    text-align: center;
+    padding: 3%;
+  }
+  padding: 0 10%;
+
+  .dark();
+  .row {
+    display: flex;
+    ::placeholder {
+      color: gray;
+    }
+    textarea {
+      margin-bottom: 3%;
+      height: 100px;
+    }
+    label {
+      color: @purple;
+      font-size: 1rem;
+    }
+    .columns {
+      width: 40%;
+      margin: 2% 5%;
+    }
+    .contact_info {
+      display: flex;
+      flex-direction: column;
+      p,
+      li {
+        font-size: 1.2rem;
+      }
+    }
+    form {
+      width: 50%;
+    }
+  }
+  .attribution{
+    opacity: 0.1
+  }
+}
