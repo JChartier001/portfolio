@@ -264,7 +264,7 @@ table {
 header {
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  font-family: "Martel", serif;
+  font-family: 'Martel', serif;
   padding-bottom: 3%;
   display: flex;
   flex-direction: column;
@@ -296,6 +296,8 @@ header nav a {
 header .title {
   display: flex;
   justify-content: center;
+  width: 90%;
+  margin: auto;
 }
 header .title img {
   margin: 0 2%;
@@ -317,12 +319,24 @@ header .title img {
   width: 80%;
   padding: 2% 10%;
 }
-.aboutMe .description p {
+.aboutMe .description p,
+.aboutMe .description a {
   font-size: 1.3rem;
 }
 .aboutMe .profile_img {
-  max-height: 400px;
-  margin: 0 0 50px 50px;
+  max-height: 600px;
+  margin: 50px 50px;
+}
+@media screen and (max-width: 900px) {
+  .aboutMe .aboutme-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutMe .description {
+    width: 90%;
+    padding: 0;
+    margin: 10px auto;
+  }
 }
 .myWork {
   background: #191919;
@@ -330,7 +344,7 @@ header .title img {
 }
 .myWork .title {
   text-align: center;
-  padding-top: 1%;
+  padding-top: 3%;
 }
 .myWork .work_container {
   width: 100vw;
@@ -402,42 +416,21 @@ header .title img {
   max-width: 100px;
 }
 .contact {
-  padding: 0 10%;
   background: #e3bef5;
-}
-.contact h2 {
-  text-align: center;
   padding: 3%;
 }
-.contact .row {
-  display: flex;
-}
-.contact .row ::placeholder {
-  color: gray;
-}
-.contact .row textarea {
-  margin-bottom: 3%;
-  height: 100px;
-}
-.contact .row label {
-  color: #b95ee8;
-  font-size: 1rem;
-}
-.contact .row .columns {
-  width: 40%;
-  margin: 2% 5%;
-}
-.contact .row .contact_info {
-  display: flex;
-  flex-direction: column;
-}
-.contact .row .contact_info p,
-.contact .row .contact_info li {
-  font-size: 1.2rem;
-}
-.contact .row form {
-  width: 50%;
+.contact p {
+  font-size: 1.3rem;
 }
 .contact .attribution {
   opacity: 0.1;
+}
+.contact .menu a {
+  font-size: 1.3rem;
+}
+.contact form label {
+  font-size: 1.3rem;
+}
+.contact form .button {
+  margin-top: 20px;
 }
